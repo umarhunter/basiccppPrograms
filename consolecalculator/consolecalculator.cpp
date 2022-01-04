@@ -45,8 +45,10 @@ int main() {
     std::cout << "NOTE: Make sure you don't have any extra characters or spaces as this may affect your output!\n";
 
     while (while_loop == 0) {
+        std::cout << "\nIf you'd like to end the program: enter any number for operation\n";
         std::cout << "Enter operation: \n";
         std::cin >> operation;
+
 
         if (operation == "Add") {
             std::cout << "Enter first number: \n";
@@ -77,7 +79,6 @@ int main() {
         }
         else
             while_loop = exitfunction(while_loop); // breaks the loop
-        std::cout << "\nIf you'd like to end the program: enter any number for operation\n";
     }
 
 }
