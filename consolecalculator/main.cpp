@@ -35,6 +35,7 @@ int main() {
     Calculator set_to_mult{Values::Multiply};
     Calculator set_to_div{Values::Divide};
 
+
     std::cout << "Enter operation";
     std::cin >> operation;
     std::cout << "Enter first number";
@@ -48,7 +49,11 @@ int main() {
         std::cout << num1 << " - " << num2 << " = " << set_to_sub.calculate(num1, num2);
     else if (operation == "Multiply")
         std::cout << num1 << " * " << num2 << " = " << set_to_mult.calculate(num1, num2);
-    else
+    else if (operation == "Divide")
         std::cout << num1 << " / " << num2 << " = " << set_to_div.calculate(num1, num2);
+    else
+        while_loop = 1;
+    std::cout << "\n Thank you for using the calculator!";
+
 
 }
