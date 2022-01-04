@@ -77,7 +77,7 @@ int main() {
         }
         else
             while_loop = exitfunction(while_loop); // breaks the loop
-
+        std::cout << "\nIf you'd like to end the program: enter any number for operation\n";
     }
 
 }
