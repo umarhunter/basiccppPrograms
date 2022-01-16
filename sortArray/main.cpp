@@ -1,9 +1,19 @@
-#include <iostream>
+#include <iostream> // necessary for input/output/size functionality
 
+/*int userInputs() {
+    int arrayNum{};
+    std::cout << "Welcome to the 'Arrayer'!\n";
+    std::cout << "Please enter the content of the array you'd like to create: ";
+    std::cin >> arrayNum;
+    std::cout << "\nThank you. " << arrayNum << " arrays have been created\n";
+    return arrayNum;
+}
+ */
 int main() {
-    int myArray[]{5, 4, 3, 2, 1};
-    int number{myArray[0]};
-    for(int jindex = 0; jindex < std::size(myArray); jindex++) {
+    //int num{userInputs()};
+    int myArray[]{5,4,3,2,1}; // the array
+    int number{};
+    for(int jindex: myArray) {
         for(int index = 0; index < std::size(myArray); index++) {
             if (myArray[index] > myArray[index+1]) {
                 number = myArray[index];
